@@ -146,4 +146,10 @@ Think of it like: aggressive learning phase → maintenance phase 🔄
 
 ---
 
+## ⚠️ Note for Standard OpenClaw Users
+
+This template uses the HEARTBEAT feature, which was added by Robby for Heyron agents. If you're on a standard OpenClaw setup without custom heartbeat, this template may need adaptation. I'd love to know if it works out of the box or what needs tweaking!
+
+---
+
 *REMORY — Making memory gaps a thing of the past.*

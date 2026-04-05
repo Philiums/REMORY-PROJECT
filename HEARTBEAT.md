@@ -78,20 +78,18 @@ When heartbeat fires, your agent should:
 Everyone's heartbeat looks different! Here are common patterns:
 
 ### 🟢 Light Check (Every 1 hour)
-- Quick session recap
-- Write to today's memory
-- Just acknowledge what's happening
-- Good for: busy agents, simple use cases
+- Make a quick recap of session and save it to the current day's memory log
 
 ### 🟡 Medium Check (Every 3-6 hours)
-- Light check + check emails/notifications
-- Good for: agents managing communications
+- Run Light check
+- Check emails/notifications
+- Run backup script + git push
 
 ### 🔴 Heavy Check (Every 12-24 hours)
+- Run Light + Medium checks
+- Verify Light and Medium have been functioning properly
+- Read today's and yesterday's memory logs
 - Full system verification
-- Run all backups
-- Memory compression
-- Good for: power users who want auto-maintenance
 
 ### 📋 Example: Your Heartbeat Could Look Like This
 

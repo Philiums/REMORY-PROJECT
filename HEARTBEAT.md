@@ -73,6 +73,51 @@ When heartbeat fires, your agent should:
 
 ---
 
+## 🔥 PRO TIPS: Different Heartbeat Patterns
+
+Everyone's heartbeat looks different! Here are common patterns:
+
+### 🟢 Light Check (Every 1 hour)
+- Quick session recap
+- Write to today's memory
+- Just acknowledge what's happening
+- Good for: busy agents, simple use cases
+
+### 🟡 Medium Check (Every 3-6 hours)
+- Light check + check emails/notifications
+- Good for: agents managing communications
+
+### 🔴 Heavy Check (Every 12-24 hours)
+- Full system verification
+- Run all backups
+- Memory compression
+- Good for: power users who want auto-maintenance
+
+### 📋 Example: Your Heartbeat Could Look Like This
+
+```markdown
+# 1 Hour Heartbeat — Light Check
+- Recap session: what did we discuss?
+- Write to CORE/memory/YYYY-MM-DD.md
+- Tag: [DECISION], [TASK], [LESSON]
+- Declaration: "1 HOUR HEARTBEAT LOCKED IN"
+
+# 6 Hour Heartbeat — Medium Check
+- Run 1-hour check
+- Run backup script: bash CORE/Scripts/backup-remory.sh
+- Check if any pending tasks
+- Declaration: "6 HOUR HEARTBEAT LOCKED IN"
+
+# 12 Hour Heartbeat — Heavy Check
+- Run all above
+- Verify backups exist
+- Memory compression check
+- Run FULL ritual
+- Declaration: "RITCHIE RAN. FULLY LOCKED IN."
+```
+
+---
+
 ## 📝 Notes for Your Agent
 
 - Always write to the correct date file (`CORE/memory/YYYY-MM-DD.md`)

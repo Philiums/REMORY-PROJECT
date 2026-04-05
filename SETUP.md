@@ -26,7 +26,7 @@ This template sets up:
 ## How It Works
 
 1. Your agent reads this SETUP.md
-2. Agent runs: `bash A-LAB/REMORY-TEMPLATE-PROJECT/setup-remory.sh`
+2. Agent runs: `bash SCRIPTS/setup-remory.sh`
 3. Script creates all necessary folders and copies template files to the right places
 4. Done! Your memory system is live.
 
@@ -36,34 +36,38 @@ This template sets up:
 
 If the script doesn't work, here's the manual process:
 
+**Choose where you want your memory system to live.** For example:
+- `~/workspace/your-agent/CORE/memory`
+- Or just `memory/` in your workspace root
+
 ### Step 1: Create Folder Structure
 
 ```bash
-mkdir -p CORE/memory
-mkdir -p CORE/Scripts
-mkdir -p A-LAB/REMORY-TEMPLATE-PROJECT/Backups
+mkdir -p YOUR_PATH/memory
+mkdir -p YOUR_PATH/Scripts
+mkdir -p YOUR_PATH/Backups
 ```
 
 ### Step 2: Copy Scripts
 
 ```bash
-cp A-LAB/REMORY-TEMPLATE-PROJECT/backup-remory.sh CORE/Scripts/
-cp A-LAB/REMORY-TEMPLATE-PROJECT/monthly-memory-compress.sh CORE/Scripts/
-chmod +x CORE/Scripts/*.sh
+cp REMORY-TEMPLATE-PROJECT/SCRIPTS/backup-remory.sh YOUR_PATH/Scripts/
+cp REMORY-TEMPLATE-PROJECT/SCRIPTS/monthly-memory-compress.sh YOUR_PATH/Scripts/
+chmod +x YOUR_PATH/Scripts/*.sh
 ```
 
 ### Step 3: Create Your First Memory Log
 
 ```bash
-echo "# $(date +%Y-%m-%d) Memory Log" > CORE/memory/$(date +%Y-%m-%d).md
+echo "# $(date +%Y-%m-%d) Memory Log" > YOUR_PATH/memory/$(date +%Y-%m-%d).md
 ```
 
 ### Step 4: Set Up HEARTBEAT.md
 
-Copy the template:
+Copy the template to your workspace root:
 
 ```bash
-cp A-LAB/REMORY-TEMPLATE-PROJECT/HEARTBEAT.md ../
+cp REMORY-TEMPLATE-PROJECT/HEARTBEAT.md ./
 ```
 
 Or create your own heartbeat file referencing CORE/memory for daily recaps.
